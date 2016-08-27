@@ -1,0 +1,34 @@
+body{
+    background-color: gainsboro;
+    background-size: cover;
+}
+.box{
+    background-color: gainsboro;
+    margin: 10px;
+}
+.canvas {
+    background-color: white;
+    margin: 7px;
+    display: inline-block;
+    box-shadow: 3px 3px 7px grey;
+    -webkit-box-shadow: 3px 3px 7px grey;
+    -moz-box-shadow: 3px 3px 7px grey;
+    z-index: 0;
+}
+
+.sidebar_canvas {
+    height: 800px;
+    width:30.7%;
+    margin-right: 0;
+    z-index: 0;
+    position: fixed;
+    overflow: hidden;
+}
+.main_canvas{
+    height: 800px;
+    width: 64.6%;
+    z-index: 0;
+    margin-left: 32%;
+    position: fixed;
+    overflow: hidden;s
+}
