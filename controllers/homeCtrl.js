@@ -4,7 +4,16 @@ angular.module('RDM').controller('homeCtrl',function($state,$scope){
         children : [
             {
                 label:'Mango',
-                children:['Alphanso']
+                children:[
+                    {
+                        label:'Alphanso',
+                        children:[
+                            {
+                                label:'mangoA',
+                                children:['fafa','baba']
+                            },
+                            'mangoB','mangoC','mangoZ']
+                    }]
             },
             {
                 label:'Orange',
@@ -12,7 +21,15 @@ angular.module('RDM').controller('homeCtrl',function($state,$scope){
             },
             {
                 label:'Banana',
-                children : ['a','b'],
+                children : [
+                    {
+                        label:'a',
+                        children:['first','second']
+                    },
+                    {
+                        label:'b',
+                        noLeaf:true
+                    }],
                 classes:['special','red']
             }]
     }];
