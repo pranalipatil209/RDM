@@ -5,10 +5,7 @@ angular.module('RDM', ['ui.router','angularTreeview'])
             .state('home', {
                 url:'/home',
                 templateUrl:'templates/home.html',
-                controller:'homeCtrl',
-                onEnter: function(){
-                    console.log('HOME');
-                }
+                controller:'homeCtrl'
             })
     });
 

@@ -28,7 +28,7 @@ angular.module('RDM').controller('homeCtrl',function($state,$scope){
             },
             {
                 label:'Orange',
-                roleId:'role2',
+                roleId:'role2'
             },
             {
                 label:'Banana',
@@ -45,7 +45,11 @@ angular.module('RDM').controller('homeCtrl',function($state,$scope){
                     }]
             }]
     }];
-    // $scope.my_tree_handler = function(branch){
-    //     console.log(branch);
-    // }
+    $scope.$watch( 'abc.currentNode', function( newObj, oldObj ) {
+        if( $scope.abc && angular.isObject($scope.abc.currentNode) ) {
+            console.log( 'Node Selected!!' );
+            console.log( $scope.abc.currentNode );
+            $scope.pp =  $scope.abc.currentNode.label;
+        }
+    }, false);
 });
