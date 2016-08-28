@@ -4,36 +4,48 @@ angular.module('RDM').controller('homeCtrl',function($state,$scope){
         children : [
             {
                 label:'Mango',
+                roleId:'role1',
                 children:[
                     {
                         label:'Alphanso',
+                        roleId:'role1.1',
                         children:[
                             {
                                 label:'mangoA',
-                                children:['fafa','baba']
+                                roleId:'role1.1.1',
+                                children:[{
+                                    label:'fafa',
+                                    roleId:'role1.1.1-1'
+                                },{
+                                    label:'baba',
+                                    roleId:'role1.1.1-2'
+                                }]
                             },
-                            'mangoB','mangoC','mangoZ']
+                            {label:'mangoB'},
+                            {label:'mangoC'},
+                            {label:'mangoZ'}]
                     }]
             },
             {
                 label:'Orange',
-                noLeaf: true
+                roleId:'role2',
             },
             {
                 label:'Banana',
+                roleId:'role3',
                 children : [
                     {
                         label:'a',
-                        children:['first','second']
+                        roleId:'role3.1',
+                        children:[]
                     },
                     {
                         label:'b',
-                        noLeaf:true
-                    }],
-                classes:['special','red']
+                        roleId:'role3.2'
+                    }]
             }]
     }];
-    $scope.my_tree_handler = function(branch){
-        console.log(branch);
-    }
+    // $scope.my_tree_handler = function(branch){
+    //     console.log(branch);
+    // }
 });

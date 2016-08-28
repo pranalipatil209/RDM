@@ -1,4 +1,4 @@
-angular.module('RDM', ['ui.router','angularBootstrapNavTree'])
+angular.module('RDM', ['ui.router','angularTreeview'])
     .config(function($stateProvider,$urlRouterProvider){
         $urlRouterProvider.otherwise('/home');
         $stateProvider

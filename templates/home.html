@@ -2,22 +2,32 @@
     <div class="sidebar_canvas canvas">
 
         <div class="treeView">
-            <abn-tree
-                    tree-data         = "treeData"
-                    class             = "abn-tree-row"
-                    tree-control      = "my_tree"
-                    icon-leaf         = "icon-file"
-                    icon-expand       = "icon-plus-sign"
-                    icon-collapse     = "icon-minus-sign"
-                    on-select         = "my_tree_handler(branch)"
-                    expand-level      = "2"
-                    initial-selection = "Mango">
-            </abn-tree>
+            <div
+                    data-angular-treeview="true"
+                    data-tree-id="abc"
+                    data-tree-model="treeData"
+                    data-node-id="id"
+                    data-node-label="label"
+                    data-node-children="children" >
+            </div>
+            <!--<abn-tree-->
+                    <!--tree-data         = "treeData"-->
+                    <!--class             = "abn-tree-row"-->
+                    <!--tree-control      = "my_tree"-->
+                    <!--icon-leaf         = "icon-file"-->
+                    <!--icon-expand       = "icon-plus-sign"-->
+                    <!--icon-collapse     = "icon-minus-sign"-->
+                    <!--on-select         = "my_tree_handler(branch)"-->
+                    <!--expand-level      = "2"-->
+                    <!--initial-selection = "Mango">-->
+            <!--</abn-tree>-->
 
         </div>
 
     </div>
     <div class="main_canvas canvas">
+        <center>
 
+        </center>
     </div>
 </div>
